@@ -19,7 +19,7 @@
 						<a class="list-title-item border-after-1px" :class="flag?'':'active'" @click="upComing">即将上映</a>
 					</div>
 					<ul>
-						<li v-for="item in flag?listOnShow:listUpComing" class="item border-after-1px">
+						<li v-for="item in flag?listOnShow:listUpComing" class="item border-after-1px" @click="selectMovie(item)">
 							<div class="icon">
 								<img width="75" height="100" v-lazy="item.litpic">
 							</div>
@@ -39,6 +39,7 @@
 			</div>
 		</scroll>
 	</div>
+	<router-view></router-view>
 </div> 
 </template>
 
@@ -66,6 +67,12 @@ export default {
 		},
 		upComing() {
 			this.flag = false
+		},
+		selectMovie(movie) {
+			this.$router.push({
+				 path:'/movies/movie-detail',
+				 query:{aid:movie.aid}
+			})
 		},
 		_getMovies() {
 			this.$http.get('/api/movies').then((response) => {

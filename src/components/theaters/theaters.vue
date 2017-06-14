@@ -4,23 +4,26 @@
 	<div class="theaters">
 		<scroll class="theater-list" :data_a="c_theaters">
 			<ul>
-				<li v-for="item in c_theaters" class="theater_info border-after-1px">
-				<div class="title">
-					<span class="name">{{item.title}}</span>
-					<span class="score" v-html="item.myscores"></span>
-				</div>
-				<div class="location">
-					<i class="bg-icon_adress2"></i>
-					<span class="address">{{item.address}}</span>
-					<span class="distance">{{item.distance}}</span>
-				</div>
-				<div class="recent_events">
-					<i class="bg-icon_time2"></i>
-					<span class="text">近期场次</span>
-					<ul>
-						<li v-for="e_item in item.showing" class="e_item">{{e_item}}</li>
-					</ul>
-				</div>
+				<li 
+					v-for="item in c_theaters" 
+					@click="setTheaterDetail(item)" 
+					class="theater_info border-after-1px">
+					<div class="title">
+						<span class="name">{{item.title}}</span>
+						<span class="score" v-html="item.myscores"></span>
+					</div>
+					<div class="location">
+						<i class="bg-icon_adress2"></i>
+						<span class="address">{{item.address}}</span>
+						<span class="distance">{{item.distance}}</span>
+					</div>
+					<div class="recent_events">
+						<i class="bg-icon_time2"></i>
+						<span class="text">近期场次</span>
+						<ul>
+							<li v-for="e_item in item.showing" class="e_item">{{e_item}}</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</scroll>
@@ -45,11 +48,11 @@ export default {
 		this._getTheaters()
 	},
 	methods: {
-		selectSinger(singer){
+		setTheaterDetail(theater) {
 			this.$router.push({
-				path:`/singer/${singer.id}`
+				path:'/theaters/theater-detail',
+				query:{title:theater.title}
 			})
-			this.setSinger(singer)
 		},
 		_getTheaters() {
 			this.$http.get('/api/theaters').then((response) => {

@@ -13,6 +13,7 @@ import Theaters from 'components/theaters/theaters'
 import Discovery from 'components/discovery/discovery'
 import User from 'components/user/user'
 import MovieDetail from 'components/movie-detail/movie-detail'
+import TheaterDetail from 'components/theater-detail/theater-detail'
 
 fastclick.attach(document.body)
 
@@ -25,21 +26,27 @@ Vue.use(VueLazyLoad,{
 const routes = [
 	{
 		path: '/',
-		redirect: '/Movies'
+		redirect: '/movies'
 	},
 	{
 		path: '/movies',
 		component: Movies,
 		children: [
 		{
-			path: ':id',
+			path: ':aid',
 			component:MovieDetail
 		}
 		]
 	},
 	{
 		path: '/theaters',
-		component: Theaters	
+		component: Theaters,
+		children:[
+		{
+			path:':aid',
+			component:TheaterDetail
+		}
+		]	
 	},
 	{
 		path: '/discovery',

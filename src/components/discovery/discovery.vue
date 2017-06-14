@@ -3,7 +3,7 @@
 	<m-header :title="d_title"></m-header>
 	<ul class="discovery">
 		<li v-for="item in discovery" class="item">
-			<img :src="item.litpic">
+			<img v-lazy="item.litpic">
 		</li>
 	</ul>
 </div> 
