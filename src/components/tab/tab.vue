@@ -53,11 +53,11 @@ export default {}
 				height: 64px
 				sprite-bg-image()
 				&.bg-tab_movie
-					background-position:-214px -2px
+					background: url('~common/image/tab_movie_active.png')
 				&.bg-tab_theater
-					background-position:-70px -136px
+					background: url('~common/image/tab_theater_active.png')
 				&.bg-tab_discovery
-					background-position:-70px -68px
+					background: url('~common/image/tab_discovery_active.png')
 				&.bg-tab_user
-					background-position:-2px -136px
+					background: url('~common/image/tab_user_active.png')
 </style>

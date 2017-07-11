@@ -1,12 +1,13 @@
 <template>
 <div>
+	<div>
 	<m-header :title='m_title'></m-header>
 	<div class="theaters">
-		<scroll class="theater-list" :data_a="c_theaters">
+		<scroll class="theater-list" :data_a="f_theaters" v-if="f_theaters.length">
 			<ul>
 				<li 
-					v-for="item in c_theaters" 
-					@click="setTheaterDetail(item)" 
+					v-for="item in f_theaters" 
+					@click="toTheaterDetail(item)" 
 					class="theater_info border-after-1px">
 					<div class="title">
 						<span class="name">{{item.title}}</span>
@@ -27,45 +28,83 @@
 				</li>
 			</ul>
 		</scroll>
-		<router-view></router-view>
+		<div v-else class="remind">
+			<img src="./empty_recommend.png" alt="暂无影院" width="175" height="175">
+			<div class="remind-text">暂无影院播放</div>
+		</div>
 	</div>
-</div>  
+	</div>
+	<unfinished :data="thData" :defaultData="defaultData"></unfinished>
+	<router-view></router-view>
+</div>
 </template>
 
 <script>
 import MHeader from 'components/m-header/m-header'
 import Scroll from 'base/scroll/scroll'
-import {ERR_OK} from 'api/config'
-
+import Unfinished from 'components/unfinished/unfinished'
+// 京基店的id
+const EXAMPLEID = "109288"
+const EXAMPLETITLE = "深圳京基IMAX店"
 export default {
 	data() {
 		return {
 			c_theaters:[],
-			m_title:'影院'
+			f_theaters:[],
+			filter:'',
+			thData:'',
+			defaultData:''
 		}
+	},
+	beforeRouteEnter(to,from,next) {
+		next(vm => {
+			if(vm.$route.query.id){
+				let filter=vm.$route.query.id
+				vm.f_theaters=vm.c_theaters.filter((item) => {
+					return item.movielist.indexOf(filter)>-1
+				})
+			}else {
+				vm.f_theaters=vm.c_theaters
+			}
+		})
 	},
 	created() {
 		this._getTheaters()
 	},
+	computed: {
+		m_title() {
+			return this.$route.query.id?'选择影院':'影院'
+		}
+	},
 	methods: {
-		setTheaterDetail(theater) {
-			this.$router.push({
-				path:'/theaters/theater-detail',
-				query:{title:theater.title}
-			})
+		toTheaterDetail(theater) {
+			if(theater.aid!==EXAMPLEID){
+				this.thData=theater.title.split('-')[1]
+				this.defaultData=EXAMPLETITLE
+				setTimeout(() => {
+					this.$router.push({
+						path:'/theaters/theater-detail',
+						query:{aid:EXAMPLEID}
+					})
+				},1500)
+			}else {
+				this.$router.push({
+					path:'/theaters/theater-detail',
+					query:{aid:EXAMPLEID}
+				})
+			}
 		},
 		_getTheaters() {
-			this.$http.get('/api/theaters').then((response) => {
-				response = response.body
-				if(response.errno === ERR_OK) {
-					this.c_theaters = response.data
-				}
+			this.$http.get('/static/theaters.json').then((response) => {
+				this.c_theaters = response.body
+				this.f_theaters = this.c_theaters
 			})
 		}
 	},
 	components: {
 		MHeader,
-		Scroll
+		Scroll,
+		Unfinished
 	}
 }    
 </script>
@@ -126,4 +165,10 @@ export default {
 					line-height:16px
 					.e_item
 						display:inline-block
+	.remind
+		text-align:center
+		img
+			margin:60px 0 30px
+		.remind-text
+			font-size:$font-size-large
 </style>

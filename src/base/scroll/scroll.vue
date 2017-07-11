@@ -75,6 +75,7 @@ export default {
 		data_a() {
 			setTimeout(() => {
 				this.refresh()
+				this.scrollTo(0,0)
 			},20)
 		}
 	}

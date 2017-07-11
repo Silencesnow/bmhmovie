@@ -1,7 +1,12 @@
 <template>
 <div class="user">
-	<header><img src="./mine_face.png" alt=""></header>
+	<header class="header"><img src="./mine_face.png" alt=""></header>
 	<ul class="user_info">
+		<li class="item" @click="toUserOrder()">
+			<i class="bg-mine_ic_dd"></i>
+			<span class="title">我的订单</span>
+			<i class="icon-chevron-thin-right"></i>
+		</li>
 		<li v-for="item in message" class="item">
 			<i :class="item.icon"></i>
 			<span class="title">{{item.title}}</span>
@@ -9,12 +14,12 @@
 			<span v-if="item.tel" class="ex">{{item.tel}}</span>
 		</li>
 	</ul>
+	<router-view></router-view>
 </div>    
 </template>
 
 <script>
 const Message = [
-	{icon:"bg-mine_ic_dd",title:"我的订单"},
 	{icon:"bg-mine_ic_wallet",title:"我的钱包"},
 	{icon:"bg-mine_ic_set",title:"用户设置"},
 	{icon:"bg-mine_ic_tel",title:"客服电话",tel:"10049"}
@@ -23,6 +28,13 @@ export default {
 	data() {
 		return {
 			message:Message
+		}
+	},
+	methods: {
+		toUserOrder() {
+			this.$router.push({
+				path:'/user/order'
+			})
 		}
 	}
 }    
@@ -37,7 +49,7 @@ export default {
 	top:0
 	bottom:60px
 	background:$color-background-d
-	header
+	.header
 		height:125px
 		padding-top:40px
 		background:$color-theme

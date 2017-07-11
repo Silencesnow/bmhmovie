@@ -3,7 +3,7 @@
 	<m-header :title="d_title"></m-header>
 	<ul class="discovery">
 		<li v-for="item in discovery" class="item">
-			<img v-lazy="item.litpic">
+			<img :src="item.litpic">
 		</li>
 	</ul>
 </div> 
@@ -11,7 +11,6 @@
 
 <script>
 import MHeader from 'components/m-header/m-header'
-import {ERR_OK} from 'api/config'
 
 export default {
 	data() {
@@ -28,11 +27,8 @@ export default {
 	},
 	methods: {
 		_getDiscovery() {
-			this.$http.get('/api/discovery').then((response) => {
-				response = response.body
-				if(response.errno === ERR_OK) {
-					this.discovery = response.data
-				}
+			this.$http.get('/static/discovery.json').then((response) => {
+				this.discovery = response.body
 			})
 		}
 	}

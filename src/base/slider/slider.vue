@@ -31,7 +31,7 @@ export default {
 		},
 		interval: {
 			type:Number,
-			default:1000
+			default:4000
 		}
 	},
 	mounted() {
@@ -51,13 +51,15 @@ export default {
 			this.slider.refresh()
 		})
 	},
+	activated() {
+		this.slider.goToPage(this.currentPageIndex +1,0,400)
+	},
 	destroyed() {
 		clearTimeout(this.timer)
 	},
 	methods: {
 		_setSliderWidth(isResize) {
 			this.children = this.$refs.sliderGroup.children
-
 			let width = 0
 			let sliderWidth = this.$refs.slider.clientWidth
 			for(let i=0; i<this.children.length; i++){
@@ -70,6 +72,9 @@ export default {
 				width +=2*sliderWidth
 			}
 			this.$refs.sliderGroup.style.width = width +'px'
+		},
+		_initDots() {
+			this.dots = new Array(this.children.length)
 		},
 		_initSlider() {
 			this.slider = new BScroll(this.$refs.slider, {
@@ -92,9 +97,6 @@ export default {
 					this._play()
 				}
 			})
-		},
-		_initDots() {
-			this.dots = new Array(this.children.length)
 		},
 		_play() {
 			let pageIndex = this.currentPageIndex +1
@@ -131,21 +133,20 @@ export default {
 				display:block
 				width:100%
 	.dots
-		position:absolute
-		right:0
-		left:0
-		bottom:12px
-		font-size:0
-		text-align:center
+		position: absolute
+		right: 0
+		left: 0
+		bottom: 12px
+		text-align: center
+		font-size: 0
 		.dot
-			display:inline-block
-			margin:0 4px
-			width:8px
-			height:8px
-			border-radius:50%
-			background:$color-text-l
+			display: inline-block
+			margin: 0 4px
+			width: 8px
+			height: 8px
+			border-radius: 50%
+			background: rgba(255,255,255,0.8)
 			&.active
-				width:20px
-				border-radius:5px
-				background:$color-text-ll
+				width: 20px
+				border-radius: 5px
 </style>

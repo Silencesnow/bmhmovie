@@ -44,3 +44,24 @@ border-after-1px($color)
 border-none()
 	&:after
 		display: none
+		
+getCol(nums)
+	for x in nums
+		setX(x)
+		
+getRow(nums)
+	for y in nums
+		setY(y)		
+		
+setX(x)
+	&.col{x}
+		left:20*(x+1) px
+
+setY(y)
+	&.row{y}
+		top:20*(y+2) px
+
+for i in 1..40
+	.half{i}
+		left:i*10 px
+				

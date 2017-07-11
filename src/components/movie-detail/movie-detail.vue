@@ -1,7 +1,7 @@
 <template>
 	<transition name="slide">
 	<div class="movie">
-		<scroll ref="scroll" class="movie-detail">
+		<scroll ref="scroll" class="movie-detail" :data_o='movie'>
 			<div>
 				<div class="content-wrapper">
 					<i class="icon-chevron-thin-left" @click="backToPre"></i>
@@ -27,7 +27,7 @@
 	      				<img :src="movie.litpic" width="100%" height="100%">
 	    			</div>
 				</div>
-				<div class="buy"><span>选座购票</span></div>
+				<div class="buy" @click="toTheaters"><span :class="onShow?'enable':'disable'">选座购票</span></div>
 				<div class="detail border-after-1px" ref="detail">
 					<span class="title">导演：</span><span class="director">{{movie.director}}</span><br>
 					<span class="title">主演：</span><span class="actors">{{movie.actors}}</span><br>
@@ -56,7 +56,6 @@
 <script>
 import BScroll from 'better-scroll'
 import Scroll from 'base/scroll/scroll'
-import {ERR_OK} from 'api/config'
 import Star from 'base/star/star'
 export default {
 	data() {
@@ -67,35 +66,49 @@ export default {
 			detail_height:0
 		}
 	},
+	props:{
+		onShow:{
+			type:Boolean,
+			default:true
+		}
+	},
+	beforeRouteEnter(to,from,next) {
+		next(vm => {
+				vm._getMovie()
+		})
+	},
 	created() {
 		this._getMovie()
 	},
 	methods:{
+		toTheaters(event) {
+			if(this.onShow){
+				let i=this.$route.query.aid
+				this.$router.push({
+					path: '/theaters',
+					query:{id:i}
+				})
+			}
+		},
 		fold_spread() {
 			if(this.fold) {
 				this.$refs.des.classList.remove('ellipsis')
-				this.$refs.scroll.refresh()
 			} else {
 				this.$refs.des.classList.add('ellipsis')
-				this.$refs.scroll.refresh()
 			}
+			this.$refs.scroll.refresh()
 			this.fold =!this.fold
 		},
 		backToPre() {
-			this.$router.push({
-				path:'/movies'
-			})
+			this.$router.back()
 		},
 		_getMovie() {
-			this.$http.get('/api/movieDetail').then((response) => {
-				response = response.body
-				if(response.errno === ERR_OK) {
-					this.movie = response.data[this.$route.query.aid]
+			this.$http.get('/static/movieDetail.json').then((response) => {
+					this.movie = response.body[this.$route.query.aid]
 					this.$nextTick(() => {
 						this._movie_info_init()
 						this._initPics()
 					})
-				}
 			})
 		},
 		_movie_info_init() {
@@ -135,9 +148,9 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
 @import "~common/stylus/variable" 
 @import "~common/stylus/mixin" 
-.slide-enter-active,.slide-leave-active
+.slide-enter-active
 	transition:all 0.3s
-.slide-enter,.slide-leave-to
+.slide-enter
 	transform:translate3d(100%,0,0)
 .movie
 	position:fixed
@@ -196,7 +209,6 @@ export default {
 			border-top:12px solid #fff
 			span
 				display:block
-				background:$color-theme-l
 				height:48px
 				margin:0 12px
 				border-radius:5px
@@ -204,6 +216,10 @@ export default {
 				line-height:48px
 				font-size:$font-size-medium-x
 				color:#fff
+				&.enable
+					background:$color-theme-l
+				&.disable
+					background:$color-gray-l
 		.detail
 			padding:12px 12px 6px
 			font-size:$font-size-medium

@@ -14,6 +14,10 @@ import Discovery from 'components/discovery/discovery'
 import User from 'components/user/user'
 import MovieDetail from 'components/movie-detail/movie-detail'
 import TheaterDetail from 'components/theater-detail/theater-detail'
+import SeatSelection from 'components/seat-selection/seat-selection'
+import UserOrder from 'components/user-order/user-order'
+import OrderItem from 'components/order-item/order-item'
+import CityCheck from 'components/city-check/city-check'
 
 fastclick.attach(document.body)
 
@@ -23,6 +27,10 @@ Vue.use(VueLazyLoad,{
 	loading:require('common/image/default.png')
 })
 
+Vue.http.options.root = '/root'
+Vue.http.headers.common['Authorization'] = 'Basic YXBpOnBhc3N3b3Jk'
+
+Vue.http.options.emulateJSON = true
 const routes = [
 	{
 		path: '/',
@@ -43,10 +51,14 @@ const routes = [
 		component: Theaters,
 		children:[
 		{
-			path:':aid',
+			path:':orderId',
 			component:TheaterDetail
 		}
-		]	
+		]
+	},
+	{
+		path:'/theaters/theater-detail/:id',
+		component:SeatSelection
 	},
 	{
 		path: '/discovery',
@@ -54,16 +66,36 @@ const routes = [
 	},
 	{
 		path: '/user',
-		component: User
+		component: User,
+		children:[
+		{
+			path:'order',
+			component:UserOrder
+		}
+		]
+	},
+	{
+		path:'/user/order/:orderId',
+		component:OrderItem
+	},
+	{
+		path:'/city',
+		component:CityCheck
 	}
 	]
 
 const router = new VueRouter({
-  routes
+  	routes
 })
 /* eslint-disable no-new */
 new Vue({
 	el: '#app',
 	router,
-	render: h => h(App)
+	render: h => h(App),
+	http: {
+	    root: '/root',
+	    headers: {
+	      Authorization: 'Basic YXBpOnBhc3N3b3Jk'
+    	}
+  	}
 })

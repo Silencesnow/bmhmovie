@@ -4,19 +4,19 @@
 	<div class="movies">
 		<scroll ref="scroll"  :data_o="movies" class="movies-content">
 			<div>
-				<div class="slider-wrapper">
+				<div class="slider-wrapper" v-if="banner_list.length">
 					<slider>
 						<div v-for="item in banner_list">
-							<a :href="item">
-								<img class="needsclick" @load="loadImg" :src="item">
+							<a @click="selectMovie(item)">
+								<img class="needsclick" @load="loadImg" :src="item.src">
 							</a>
 						</div>
 					</slider>	
 				</div>
 				<div class="movie-list">
 					<div class="list-title">
-						<a class="list-title-item border-after-1px" :class="flag?'active':'' "@click="onShow">正在热映</a>
-						<a class="list-title-item border-after-1px" :class="flag?'':'active'" @click="upComing">即将上映</a>
+						<a class="list-title-item border-after-1px" :class="{'active':flag}" @click="toggle(true)">正在热映</a>
+						<a class="list-title-item border-after-1px" :class="{'active':!flag}" @click="toggle(false)">即将上映</a>
 					</div>
 					<ul>
 						<li v-for="item in flag?listOnShow:listUpComing" class="item border-after-1px" @click="selectMovie(item)">
@@ -26,7 +26,7 @@
 							<div class="info">
 								<h2 class="name" v-html="item.title"></h2>
 								<div class="text">
-									<span class="desc">{{item.description}}</span><span class="buy" v-if="flag&&!item.pre_sale">购票</span><span class="pre_buy" v-if="(!flag&&item.pre_sale)||(flag&&item.pre_sale)">预售</span>
+									<span class="desc">{{item.description}}</span><span class="buy" @click.stop="toTheaters(item)" v-if="flag&&!item.pre_sale">购票</span><span class="pre_buy" v-if="(!flag&&item.pre_sale)||(flag&&item.pre_sale)">预售</span>
 								</div>
 								<div class="score"><star :score="item.myscores"></star><span class="number">{{item.myscores}}</span></div>
 							</div>
@@ -39,7 +39,7 @@
 			</div>
 		</scroll>
 	</div>
-	<router-view></router-view>
+	<router-view :onShow="flag"></router-view>
 </div> 
 </template>
 
@@ -49,7 +49,6 @@ import Scroll from 'base/scroll/scroll'
 import Loading from 'base/loading/loading'
 import Star from 'base/star/star'
 import MHeader from 'components/m-header/m-header.vue'
-import {ERR_OK} from 'api/config'
 
 export default {
 	data() {
@@ -62,27 +61,27 @@ export default {
 		}
 	},
 	methods: {
-		onShow() {
-			this.flag = true
+		toTheaters(item) {
+			this.$router.push({
+				path: '/theaters',
+				query:{id:item.aid}
+			})
 		},
-		upComing() {
-			this.flag = false
+		toggle(bool) {
+			this.flag = bool
 		},
-		selectMovie(movie) {
+		selectMovie(item) {
 			this.$router.push({
 				 path:'/movies/movie-detail',
-				 query:{aid:movie.aid}
+				 query:{aid:item.aid}
 			})
 		},
 		_getMovies() {
-			this.$http.get('/api/movies').then((response) => {
-				response = response.body
-				if(response.errno === ERR_OK) {
-					this.movies = response.data
-					this.banner_list = this.movies.banner_list
-					this.listOnShow = this.movies.c_movies.listOnShow
-					this.listUpComing = this.movies.c_movies.listUpComing
-				}
+			this.$http.get('/static/movies.json').then((response) => {
+				this.movies = response.body
+				this.banner_list = this.movies.banner_list
+				this.listOnShow = this.movies.c_movies.listOnShow
+				this.listUpComing = this.movies.c_movies.listUpComing
 			})
 		},
 		loadImg(){
