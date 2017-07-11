@@ -1,0 +1,728 @@
+{
+    "hot_city": [
+        {
+            "id": "1",
+            "name": "北京",
+            "character": "B"
+        },
+        {
+            "id": "9",
+            "name": "上海",
+            "character": "S"
+        },
+        {
+            "id": "1701",
+            "name": "武汉",
+            "character": "W"
+        },
+        {
+            "id": "1901",
+            "name": "广州",
+            "character": "G"
+        },
+        {
+            "id": "1903",
+            "name": "深圳",
+            "character": "S"
+        },
+        {
+            "id": "22",
+            "name": "重庆",
+            "character": "C"
+        },
+        {
+            "id": "2301",
+            "name": "成都",
+            "character": "C"
+        }
+    ],
+    "city_character": {
+        "A": [
+            {
+                "id": "1208",
+                "name": "安庆",
+                "character": "A"
+            },
+            {
+                "id": "150704",
+                "name": "安丘",
+                "character": "A"
+            },
+            {
+                "id": "2404",
+                "name": "安顺",
+                "character": "A"
+            },
+            {
+                "id": "2709",
+                "name": "安康",
+                "character": "A"
+            },
+            {
+                "id": "603",
+                "name": "鞍山",
+                "character": "A"
+            }
+        ],
+        "B": [
+            {
+                "id": "1203",
+                "name": "蚌埠",
+                "character": "B"
+            },
+            {
+                "id": "1215",
+                "name": "亳州",
+                "character": "B"
+            },
+            {
+                "id": "2703",
+                "name": "宝鸡",
+                "character": "B"
+            },
+            {
+                "id": "306",
+                "name": "保定",
+                "character": "B"
+            },
+            {
+                "id": "1516",
+                "name": "滨州",
+                "character": "B"
+            },
+            {
+                "id": "2407",
+                "name": "毕节",
+                "character": "B"
+            },
+            {
+                "id": "1",
+                "name": "北京",
+                "character": "B"
+            }
+        ],
+        "C": [
+            {
+                "id": "504",
+                "name": "赤峰",
+                "character": "C"
+            },
+            {
+                "id": "1807",
+                "name": "常德",
+                "character": "C"
+            },
+            {
+                "id": "100504",
+                "name": "常熟",
+                "character": "C"
+            },
+            {
+                "id": "1801",
+                "name": "长沙",
+                "character": "C"
+            },
+            {
+                "id": "1004",
+                "name": "常州",
+                "character": "C"
+            },
+            {
+                "id": "22",
+                "name": "重庆",
+                "character": "C"
+            },
+            {
+                "id": "2301",
+                "name": "成都",
+                "character": "C"
+            }
+        ],
+        "D": [
+            {
+                "id": "2305",
+                "name": "德阳",
+                "character": "D"
+            },
+            {
+                "id": "1505",
+                "name": "东营",
+                "character": "D"
+            },
+            {
+                "id": "806",
+                "name": "大庆",
+                "character": "D"
+            },
+            {
+                "id": "2315",
+                "name": "达州",
+                "character": "D"
+            },
+            {
+                "id": "1917",
+                "name": "东莞",
+                "character": "D"
+            },
+            {
+                "id": "602",
+                "name": "大连",
+                "character": "D"
+            }
+        ],
+        "F": [
+            {
+                "id": "1211",
+                "name": "阜阳",
+                "character": "F"
+            },
+            {
+                "id": "1301",
+                "name": "福州",
+                "character": "F"
+            },
+            {
+                "id": "1906",
+                "name": "佛山",
+                "character": "F"
+            },
+            {
+                "id": "1410",
+                "name": "抚州",
+                "character": "F"
+            }
+        ],
+        "G": [
+            {
+                "id": "2314",
+                "name": "广安",
+                "character": "G"
+            },
+            {
+                "id": "3004",
+                "name": "固原",
+                "character": "G"
+            },
+            {
+                "id": "2401",
+                "name": "贵阳",
+                "character": "G"
+            },
+            {
+                "id": "2003",
+                "name": "桂林",
+                "character": "G"
+            },
+            {
+                "id": "1901",
+                "name": "广州",
+                "character": "G"
+            }
+        ],
+        "H": [
+            {
+                "id": "1209",
+                "name": "黄山",
+                "character": "H"
+            },
+            {
+                "id": "1105",
+                "name": "湖州",
+                "character": "H"
+            },
+            {
+                "id": "1710",
+                "name": "黄冈",
+                "character": "H"
+            },
+            {
+                "id": "60304",
+                "name": "海城",
+                "character": "H"
+            },
+            {
+                "id": "2101",
+                "name": "海口",
+                "character": "H"
+            },
+            {
+                "id": "1008",
+                "name": "淮安",
+                "character": "H"
+            },
+            {
+                "id": "1804",
+                "name": "衡阳",
+                "character": "H"
+            },
+            {
+                "id": "1812",
+                "name": "怀化",
+                "character": "H"
+            },
+            {
+                "id": "801",
+                "name": "哈尔滨",
+                "character": "H"
+            },
+            {
+                "id": "614",
+                "name": "葫芦岛",
+                "character": "H"
+            },
+            {
+                "id": "1911",
+                "name": "惠州",
+                "character": "H"
+            },
+            {
+                "id": "1914",
+                "name": "河源",
+                "character": "H"
+            },
+            {
+                "id": "501",
+                "name": "呼和浩特",
+                "character": "H"
+            },
+            {
+                "id": "1201",
+                "name": "合肥",
+                "character": "H"
+            },
+            {
+                "id": "1101",
+                "name": "杭州",
+                "character": "H"
+            }
+        ],
+        "J": [
+            {
+                "id": "1404",
+                "name": "九江",
+                "character": "J"
+            },
+            {
+                "id": "1920",
+                "name": "揭阳",
+                "character": "J"
+            },
+            {
+                "id": "1707",
+                "name": "荆门",
+                "character": "J"
+            },
+            {
+                "id": "702",
+                "name": "吉林",
+                "character": "J"
+            },
+            {
+                "id": "808",
+                "name": "佳木斯",
+                "character": "J"
+            },
+            {
+                "id": "2809",
+                "name": "酒泉",
+                "character": "J"
+            },
+            {
+                "id": "1109",
+                "name": "金华",
+                "character": "J"
+            },
+            {
+                "id": "1501",
+                "name": "济南",
+                "character": "J"
+            },
+            {
+                "id": "150201",
+                "name": "即墨",
+                "character": "J"
+            },
+            {
+                "id": "1907",
+                "name": "江门",
+                "character": "J"
+            },
+            {
+                "id": "1104",
+                "name": "嘉兴",
+                "character": "J"
+            }
+        ],
+        "K": [
+            {
+                "id": "2501",
+                "name": "昆明",
+                "character": "K"
+            }
+        ],
+        "L": [
+            {
+                "id": "610",
+                "name": "辽阳",
+                "character": "L"
+            },
+            {
+                "id": "410",
+                "name": "临汾",
+                "character": "L"
+            },
+            {
+                "id": "1308",
+                "name": "龙岩",
+                "character": "L"
+            },
+            {
+                "id": "1603",
+                "name": "洛阳",
+                "character": "L"
+            },
+            {
+                "id": "1813",
+                "name": "娄底",
+                "character": "L"
+            },
+            {
+                "id": "2601",
+                "name": "拉萨",
+                "character": "L"
+            },
+            {
+                "id": "2801",
+                "name": "兰州",
+                "character": "L"
+            },
+            {
+                "id": "100405",
+                "name": "溧阳",
+                "character": "L"
+            },
+            {
+                "id": "150612",
+                "name": "龙口",
+                "character": "L"
+            },
+            {
+                "id": "1513",
+                "name": "临沂",
+                "character": "L"
+            },
+            {
+                "id": "1214",
+                "name": "六安",
+                "character": "L"
+            },
+            {
+                "id": "310",
+                "name": "廊坊",
+                "character": "L"
+            }
+        ],
+        "M": [
+            {
+                "id": "2306",
+                "name": "绵阳",
+                "character": "M"
+            },
+            {
+                "id": "2312",
+                "name": "眉山",
+                "character": "M"
+            }
+        ],
+        "N": [
+            {
+                "id": "2311",
+                "name": "南充",
+                "character": "N"
+            },
+            {
+                "id": "2309",
+                "name": "内江",
+                "character": "N"
+            },
+            {
+                "id": "1001",
+                "name": "南京",
+                "character": "N"
+            },
+            {
+                "id": "1401",
+                "name": "南昌",
+                "character": "N"
+            },
+            {
+                "id": "1102",
+                "name": "宁波",
+                "character": "N"
+            }
+        ],
+        "P": [
+            {
+                "id": "192004",
+                "name": "普宁",
+                "character": "P"
+            }
+        ],
+        "Q": [
+            {
+                "id": "2406",
+                "name": "黔西南州",
+                "character": "Q"
+            },
+            {
+                "id": "1305",
+                "name": "泉州",
+                "character": "Q"
+            },
+            {
+                "id": "1502",
+                "name": "青岛",
+                "character": "Q"
+            }
+        ],
+        "R": [
+            {
+                "id": "100603",
+                "name": "如皋",
+                "character": "R"
+            }
+        ],
+        "S": [
+            {
+                "id": "1106",
+                "name": "绍兴",
+                "character": "S"
+            },
+            {
+                "id": "2308",
+                "name": "遂宁",
+                "character": "S"
+            },
+            {
+                "id": "703",
+                "name": "四平",
+                "character": "S"
+            },
+            {
+                "id": "1005",
+                "name": "苏州",
+                "character": "S"
+            },
+            {
+                "id": "1411",
+                "name": "上饶",
+                "character": "S"
+            },
+            {
+                "id": "301",
+                "name": "石家庄",
+                "character": "S"
+            },
+            {
+                "id": "601",
+                "name": "沈阳",
+                "character": "S"
+            },
+            {
+                "id": "9",
+                "name": "上海",
+                "character": "S"
+            },
+            {
+                "id": "1903",
+                "name": "深圳",
+                "character": "S"
+            }
+        ],
+        "T": [
+            {
+                "id": "1110",
+                "name": "台州",
+                "character": "T"
+            },
+            {
+                "id": "1012",
+                "name": "泰州",
+                "character": "T"
+            },
+            {
+                "id": "612",
+                "name": "铁岭",
+                "character": "T"
+            },
+            {
+                "id": "2",
+                "name": "天津",
+                "character": "T"
+            }
+        ],
+        "W": [
+            {
+                "id": "1103",
+                "name": "温州",
+                "character": "W"
+            },
+            {
+                "id": "2705",
+                "name": "渭南",
+                "character": "W"
+            },
+            {
+                "id": "1507",
+                "name": "潍坊",
+                "character": "W"
+            },
+            {
+                "id": "1510",
+                "name": "威海",
+                "character": "W"
+            },
+            {
+                "id": "1002",
+                "name": "无锡",
+                "character": "W"
+            },
+            {
+                "id": "1202",
+                "name": "芜湖",
+                "character": "W"
+            },
+            {
+                "id": "1701",
+                "name": "武汉",
+                "character": "W"
+            }
+        ],
+        "X": [
+            {
+                "id": "1217",
+                "name": "宣城",
+                "character": "X"
+            },
+            {
+                "id": "1803",
+                "name": "湘潭",
+                "character": "X"
+            },
+            {
+                "id": "1814",
+                "name": "湘西",
+                "character": "X"
+            },
+            {
+                "id": "1003",
+                "name": "徐州",
+                "character": "X"
+            },
+            {
+                "id": "1302",
+                "name": "厦门",
+                "character": "X"
+            },
+            {
+                "id": "2701",
+                "name": "西安",
+                "character": "X"
+            },
+            {
+                "id": "2901",
+                "name": "西宁",
+                "character": "X"
+            },
+            {
+                "id": "305",
+                "name": "邢台",
+                "character": "X"
+            }
+        ],
+        "Y": [
+            {
+                "id": "2009",
+                "name": "玉林",
+                "character": "Y"
+            },
+            {
+                "id": "2316",
+                "name": "雅安",
+                "character": "Y"
+            },
+            {
+                "id": "408",
+                "name": "运城",
+                "character": "Y"
+            },
+            {
+                "id": "2708",
+                "name": "榆林",
+                "character": "Y"
+            },
+            {
+                "id": "1704",
+                "name": "宜昌",
+                "character": "Y"
+            },
+            {
+                "id": "1506",
+                "name": "烟台",
+                "character": "Y"
+            },
+            {
+                "id": "1806",
+                "name": "岳阳",
+                "character": "Y"
+            },
+            {
+                "id": "3001",
+                "name": "银川",
+                "character": "Y"
+            },
+            {
+                "id": "608",
+                "name": "营口",
+                "character": "Y"
+            }
+        ],
+        "Z": [
+            {
+                "id": "1503",
+                "name": "淄博",
+                "character": "Z"
+            },
+            {
+                "id": "2403",
+                "name": "遵义",
+                "character": "Z"
+            },
+            {
+                "id": "307",
+                "name": "张家口",
+                "character": "Z"
+            },
+            {
+                "id": "1601",
+                "name": "郑州",
+                "character": "Z"
+            },
+            {
+                "id": "1802",
+                "name": "株洲",
+                "character": "Z"
+            },
+            {
+                "id": "1910",
+                "name": "肇庆",
+                "character": "Z"
+            },
+            {
+                "id": "1918",
+                "name": "中山",
+                "character": "Z"
+            }
+        ]
+    }
+}

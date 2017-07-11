@@ -1,0 +1,972 @@
+{
+	"109288": {
+		"theaterInfo": {
+			"aid": "109288",
+			"title": "星美国际影城-深圳京基IMAX店",
+			"address": "广东省深圳市福田区沙头街道滨河大道9289号京基百纳kkone商场四楼",
+			"myscores": "8.80",
+			"tel": "400-011-8866",
+			"tags": [
+				"3D眼镜",
+				"取票机",
+				"退改签",
+				"儿童优惠"
+			]
+		},
+		"movie_showing": {
+			"109977":{
+			    "aid": "109977",
+			    "title": "摔跤吧！爸爸",
+			    "runtime": "140",
+			    "myscores": "9.41",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170424/655312-1F4241Q3080-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023682",
+			                "language": "印度语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+							"hall_name": "2号厅",
+							"in_activity": 1,
+			                "activity": {
+			                    "activity_name": "24.9元购票，每人限购1次，最多购买2张",
+			                    "price": "24.90"
+			                },
+			                "s_time": "12:45",
+			                "e_time": "15:05"
+			            },
+			            {
+			                "show_seq_no": "0000023706",
+			                "language": "印度语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                	"activity_name": "24.9元购票，每人限购1次，最多购买2张",
+		                    	"price": "24.90"
+			                },
+			                "s_time": "14:35",
+			                "e_time": "16:55"
+			            },
+			            {
+			                "show_seq_no": "0000023689",
+			                "language": "印度语",
+			                "dimensional": "2D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "15:10",
+			                "e_time": "17:30"
+			            },
+			            {
+			                "show_seq_no": "0000023707",
+			                "language": "印度语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "24.9元购票，每人限购1次，最多购买2张",
+			                    "price": "24.90"
+			                },
+			                "s_time": "17:05",
+			                "e_time": "19:25"
+			            },
+			            {
+			                "show_seq_no": "0000023709",
+			                "language": "印度语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "【夜场福利】15.9元购票，每人限购2张",
+			                    "price": "15.90"
+			                },
+			                "s_time": "22:15",
+			                "e_time": "00:35"
+			            }
+			        ]
+			    }
+			},
+			"109960":{
+			    "aid": "109960",
+			    "title": "加勒比海盗5：死无对证",
+			    "runtime": "129",
+			    "myscores": "9.36",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170424/655312-1F424144A90-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023681",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "2号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "10:15",
+			                "e_time": "12:25"
+			            },
+			            {
+			                "show_seq_no": "0000023675",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "11:40",
+			                "e_time": "13:50"
+			            },
+			            {
+			                "show_seq_no": "0000023676",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "14:05",
+			                "e_time": "16:15"
+			            },
+			            {
+			                "show_seq_no": "0000023683",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "2号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "15:25",
+			                "e_time": "17:35"
+			            },
+			            {
+			                "show_seq_no": "0000023677",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "16:30",
+			                "e_time": "18:40"
+			            },
+			            {
+			                "show_seq_no": "0000023684",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "2号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "17:55",
+			                "e_time": "20:05"
+			            },
+			            {
+			                "show_seq_no": "0000023678",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "19:00",
+			                "e_time": "21:10"
+			            },
+			            {
+			                "show_seq_no": "0000023708",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "19:45",
+			                "e_time": "21:55"
+			            },
+			            {
+			                "show_seq_no": "0000023685",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "2号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "20:20",
+			                "e_time": "22:30"
+			            },
+			            {
+			                "show_date": "1496928300",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "21:25",
+			                "e_time": "23:35"
+			            },
+			            {
+			                "show_seq_no": "0000023686",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "2号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "【夜场福利】15.9元购票，每人限购2张",
+			                    "price": "15.90"
+			                },
+			                "s_time": "22:45",
+			                "e_time": "00:55"
+			            }
+			        ]
+			    }
+			},
+			"110186":{
+			    "aid": "110186",
+			    "title": "神奇女侠",
+			    "runtime": "133",
+			    "myscores": "9.13",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170526/655312-1F5261125420-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023670",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "10:40",
+			                "e_time": "13:05"
+			            },
+			            {
+			                "show_seq_no": "0000023693",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "3号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "11:30",
+			                "e_time": "13:55"
+			            },
+			            {
+			                "show_seq_no": "0000023699",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "13:00",
+			                "e_time": "15:25"
+			            },
+			            {
+			                "show_seq_no": "0000023671",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "13:20",
+			                "e_time": "15:45"
+			            },
+			            {
+			                "show_seq_no": "0000023694",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "3号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "14:10",
+			                "e_time": "16:35"
+			            },
+			            {
+			                "show_seq_no": "0000023700",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "15:40",
+			                "e_time": "18:05"
+			            },
+			            {
+			                "show_seq_no": "0000023672",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "16:00",
+			                "e_time": "18:25"
+			            },
+			            {
+			                "show_seq_no": "0000023695",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "3号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "16:45",
+			                "e_time": "19:10"
+			            },
+			            {
+			                "show_seq_no": "0000023701",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "18:25",
+			                "e_time": "20:50"
+			            },
+			            {
+			                "show_seq_no": "0000023673",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "18:40",
+			                "e_time": "21:05"
+			            },
+			            {
+			                "show_seq_no": "0000023696",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "3号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "19:25",
+			                "e_time": "21:50"
+			            },
+			            {
+			                "show_seq_no": "0000023691",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "19:50",
+			                "e_time": "22:15"
+			            },
+			            {
+			                "show_seq_no": "0000023702",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "30.9元购票，每人限购1次，最多购买2张",
+			                    "price": "30.90"
+			                },
+			                "s_time": "21:00",
+			                "e_time": "23:25"
+			            },
+			            {
+			                "show_seq_no": "0000023674",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 80,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "21:20",
+			                "e_time": "23:45"
+			            },
+			            {
+			                "show_seq_no": "0000023697",
+			                "language": "英语",
+			                "dimensional": "3D",
+			                "sale_price": 41,
+			                "status": "1",
+			                "hall_name": "3号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "【夜场福利】15.9元购票，每人限购2张",
+			                    "price": "15.90"
+			                },
+			                "s_time": "22:05",
+			                "e_time": "00:30"
+			            }
+			        ]
+			    }
+			},
+			"110193":{
+			    "aid": "110193",
+			    "title": "新木乃伊",
+			    "runtime": "107",
+			    "myscores": "9.11",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170526/655312-1F5261534360-L_n.jpg",
+			    "showings": {
+			        "2017-06-09": [
+			            {
+			                "show_seq_no": "0000023716",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "00:05",
+			                "e_time": "01:55"
+			            },
+			            {
+			                "show_seq_no": "0000023717",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "10:15",
+			                "e_time": "12:05"
+			            },
+			            {
+			                "show_seq_no": "0000023718",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "12:20",
+			                "e_time": "14:10"
+			            },
+			            {
+			                "show_seq_no": "0000023719",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "14:25",
+			                "e_time": "16:15"
+			            },
+			            {
+			                "show_seq_no": "0000023720",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "16:30",
+			                "e_time": "18:20"
+			            },
+			            {
+			                "show_seq_no": "0000023721",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "18:35",
+			                "e_time": "20:25"
+			            },
+			            {
+			                "show_seq_no": "0000023722",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 80,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "20:40",
+			                "e_time": "22:30"
+			            },
+			            {
+			                "show_seq_no": "0000023723",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "22:45",
+			                "e_time": "00:35"
+			            }
+			        ],
+			        "2017-06-10": [
+			            {
+			                "show_seq_no": "0000023724",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "10:15",
+			                "e_time": "12:05"
+			            },
+			            {
+			                "show_seq_no": "0000023725",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "12:20",
+			                "e_time": "14:10"
+			            },
+			            {
+			                "show_seq_no": "0000023726",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "14:25",
+			                "e_time": "16:15"
+			            },
+			            {
+			                "show_seq_no": "0000023727",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "16:30",
+			                "e_time": "18:20"
+			            },
+			            {
+			                "show_seq_no": "0000023728",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "18:35",
+			                "e_time": "20:25"
+			            },
+			            {
+			                "show_seq_no": "0000023729",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 80,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "20:40",
+			                "e_time": "22:30"
+			            },
+			            {
+			                "show_seq_no": "0000023730",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "22:45",
+			                "e_time": "00:35"
+			            }
+			        ],
+			        "2017-06-11": [
+			            {
+			                "show_seq_no": "0000023731",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "10:15",
+			                "e_time": "12:05"
+			            },
+			            {
+			                "show_seq_no": "0000023732",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "12:20",
+			                "e_time": "14:10"
+			            },
+			            {
+			                "show_seq_no": "0000023733",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "14:25",
+			                "e_time": "16:15"
+			            },
+			            {
+			                "show_seq_no": "0000023734",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "16:30",
+			                "e_time": "18:20"
+			            },
+			            {
+			                "show_seq_no": "0000023735",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "18:35",
+			                "e_time": "20:25"
+			            },
+			            {
+			                "show_seq_no": "0000023736",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 80,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "20:40",
+			                "e_time": "22:30"
+			            },
+			            {
+			                "show_seq_no": "0000023737",
+			                "language": "英语",
+			                "dimensional": "IMAX",
+			                "sale_price": 62,
+			                "status": "1",
+			                "hall_name": "IMAX厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "22:45",
+			                "e_time": "00:35"
+			            }
+			        ]
+			    }
+			},
+			"110184":{
+			    "aid": "110184",
+			    "title": "哆啦A梦：大雄的南极冰冰凉大冒险",
+			    "runtime": "101",
+			    "myscores": "8.80",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170525/655312-1F5251420290-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023688",
+			                "language": "日语",
+			                "dimensional": "2D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "13:10",
+			                "e_time": "14:55"
+			            },
+			            {
+			                "show_seq_no": "0000023690",
+			                "language": "日语",
+			                "dimensional": "2D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "17:45",
+			                "e_time": "19:30"
+			            }
+			        ]
+			    }
+			},
+			"110210":{
+			    "aid": "110210",
+			    "title": "美好的意外",
+			    "runtime": "90",
+			    "myscores": "8.53",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170526/655312-1F5261J1560-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023704",
+			                "language": "国语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "10:45",
+			                "e_time": "12:30"
+			            },
+			            {
+			                "show_seq_no": "0000023692",
+			                "language": "国语",
+			                "dimensional": "2D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "22:30",
+			                "e_time": "00:15"
+			            }
+			        ]
+			    }
+			},
+			"110113":{
+			    "aid": "110113",
+			    "title": "我的爸爸是国王",
+			    "runtime": "84",
+			    "myscores": "8.50",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170510/655312-1F5101I0210-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023738",
+			                "language": "国语",
+			                "dimensional": "2D",
+			                "sale_price": 42,
+			                "status": "1",
+			                "hall_name": "VIP厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "11:20",
+			                "e_time": "12:45"
+			            }
+			        ]
+			    }
+			},
+			"110207":{
+			    "aid": "110207",
+			    "title": "迷失Z城",
+			    "runtime": "104",
+			    "myscores": "8.50",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170526/655312-1F5261F6210-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023698",
+			                "language": "英语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "11:05",
+			                "e_time": "12:50"
+			            },
+			            {
+			                "show_seq_no": "0000023705",
+			                "language": "英语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "5号厅",
+			                "in_activity": 0,
+			                "activity": {},
+			                "s_time": "12:40",
+			                "e_time": "14:25"
+			            }
+			        ]
+			    }
+			},
+			"110214":{
+			    "aid": "110214",
+			    "title": "29+1",
+			    "runtime": "100",
+			    "myscores": "8.50",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170526/655312-1F5261K1530-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023680",
+			                "language": "粤语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "1号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "【夜场福利】15.9元购票，每人限购2张",
+			                    "price": "15.90"
+			                },
+			                "s_time": "23:45",
+			                "e_time": "01:35"
+			            }
+			        ]
+			    }
+			},
+			"110091":{
+			    "aid": "110091",
+			    "title": "临时演员",
+			    "runtime": "93",
+			    "myscores": "8.46",
+			    "litpic": "http://img2.ixingmei.com/uploads/allimg/170508/655312-1F50QK9230-L_n.jpg",
+			    "showings": {
+			        "2017-06-08": [
+			            {
+			                "show_seq_no": "0000023663",
+			                "language": "国语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "9.9元购票，每人限购2张，限量抢完即止",
+			                    "price": "9.90"
+			                },
+			                "s_time": "23:40",
+			                "e_time": "18:17"
+			            }
+			        ],
+			        "2017-06-09": [
+			            {
+			                "show_seq_no": "0000023703",
+			                "language": "国语",
+			                "dimensional": "2D",
+			                "sale_price": 31,
+			                "status": "1",
+			                "hall_name": "4号厅",
+			                "in_activity": 1,
+			                "activity": {
+			                    "activity_name": "9.9元购票，每人限购2张，限量抢完即止",
+			                    "price": "9.90"
+			                },
+			                "s_time": "23:35",
+			                "e_time": "01:10"
+			            }
+			        ]
+			    }
+			}
+		}
+	}
+}
