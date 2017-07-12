@@ -5,7 +5,7 @@
 
 在线版
 -------
-[点击进入](www.shamingming.com)
+[点击进入](http://www.shamingming.com)
 
 效果截图
 -------
